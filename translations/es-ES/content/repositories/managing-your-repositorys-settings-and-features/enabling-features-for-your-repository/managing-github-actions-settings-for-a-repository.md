@@ -87,6 +87,10 @@ Puedes configurar este comportamiento para un repositorio si utilizas el siguien
 
 {% data reusables.github-actions.private-repository-forks-overview %}
 
+Si se inhabilita una política para una {% ifversion ghec or ghae or ghes %}empresa u{% endif %} organización, esta no puede habilitarse para un repositorio.
+
+{% data reusables.github-actions.private-repository-forks-options %}
+
 ### Configurar la política de bifurcaciones privadas para un repositorio
 
 {% data reusables.repositories.navigate-to-repo %}
@@ -99,7 +103,7 @@ Puedes configurar este comportamiento para un repositorio si utilizas el siguien
 
 {% data reusables.github-actions.workflow-permissions-intro %}
 
-También pueden configurarse los permisos predeterminados en los ajustes de la organización. Si el predeterminado más restringido se seleccionó en la configuración de la organización, la misma opción se autoselecciona en tu configuración de repositorio y la opción permisiva se inhabilita.
+Los permisos predeterminados también pueden configurarse en los ajustes de la organización. Si el predeterminado más restringido se seleccionó en la configuración de la organización, la misma opción se autoselecciona en tu configuración de repositorio y la opción permisiva se inhabilita.
 
 {% data reusables.github-actions.workflow-permissions-modifying %}
 
@@ -120,7 +124,7 @@ También pueden configurarse los permisos predeterminados en los ajustes de la o
 
 Los miembros de tu empresa pueden utilizar repositorios internos para trabajar en proyectos sin compartir información públicamente. Para obtener más información, consulta la sección "[Acerca de los repositorios](/repositories/creating-and-managing-repositories/about-repositories#about-internal-repositories)".
 
-Puedes configurar si se puede acceder a{% if internal-actions%}las acciones y {% endif %}flujos de trabajo de un repositorio interno desde fuera de este.{% if internal-actions %} Para obtener más información, consulta la sección "[Compartir acciones y flujos de trabajo con tu empresa](/actions/creating-actions/sharing-actions-and-workflows-with-your-enterprise)".{% endif %}
+Puedes configurar si se puede acceder a{% if internal-actions%}las acciones y {% endif %}flujos de trabajo en un repositorio interno desde fuera del mismo.{% if internal-actions %} Para obtener más información, consulta la sección "[Compartir acciones y flujos de trabajo con tu empresa](/actions/creating-actions/sharing-actions-and-workflows-with-your-enterprise)".{% endif %}
 
 1. En {% data variables.product.prodname_dotcom %}, navega hasta la página principal del repositorio interno.
 1. Debajo de tu nombre de repositorio, haz clic en {% octicon "gear" aria-label="The gear icon" %}**Configuración**.
@@ -141,7 +145,7 @@ Puedes configurar el periodo de retenciòn para los artefactos de las {% data va
 
 {% data reusables.actions.about-artifact-log-retention %}
 
-Tambièn puedes definir un periodo de retenciòn personalizado para un artefacto especìfico que haya creado un flujo de trabajo. Para obtener màs informaciòn consulta la secciòn "[Configurar el periodo de retenciòn para un artefacto](/actions/managing-workflow-runs/removing-workflow-artifacts#setting-the-retention-period-for-an-artifact)".
+Tambièn puedes definir un periodo de retenciòn personalizado para un artefacto especìfico que haya creado un flujo de trabajo. Para obtener más información consulta la sección "[Configurar el periodo de retención para un artefacto](/actions/managing-workflow-runs/removing-workflow-artifacts#setting-the-retention-period-for-an-artifact)".
 
 ## Configurar el periodo de retenciòn para un repositorio
 

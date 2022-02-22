@@ -100,6 +100,10 @@ Puedes requerir políticas para controlar la forma en la que se comportan las {%
 
 {% data reusables.github-actions.private-repository-forks-overview %}
 
+Si se habilita una política para una empresa, esta puede inhabilitarse selectivamente en organizaciones o repositorios individuales. Si se inhabilita una política para una empresa, las organizaciones o repositorios individuales no pueden habilitarla.
+
+{% data reusables.github-actions.private-repository-forks-options %}
+
 {% data reusables.enterprise-accounts.access-enterprise %}
 {% data reusables.enterprise-accounts.policies-tab %}
 {% data reusables.enterprise-accounts.actions-tab %}

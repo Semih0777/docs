@@ -123,6 +123,20 @@ La autenticación con una clave de seguridad es *secundaria* para la autenticaci
 9.  Confirma que has descargado tus códigos de recuperación y puedes acceder a ellos. Si aún no lo has hecho, o si deseas generar otro conjunto de códigos, descarga tus códigos y guárdalos en un lugar seguro. Si pierdes el acceso a tu cuenta, puedes usar tus códigos de recuperación para volver a ingresar a tu cuenta. Para obtener más información, consulta "[Recuperar tu cuenta si pierdes tus credenciales de 2FA](/articles/recovering-your-account-if-you-lose-your-2fa-credentials)". ![Botón Download recovery codes (Descargar códigos de recuperación)](/assets/images/help/2fa/2fa-recover-during-setup.png)
 {% data reusables.two_fa.test_2fa_immediately %}
 
+{% ifversion fpt or ghec %}
+## Configurar la autenticación bifactorial utilizando {% data variables.product.prodname_mobile %}
+
+Puedes utilizar {% data variables.product.prodname_mobile %} para la 2FA cuando inicies sesión en tu cuenta de {% data variables.product.prodname_dotcom %} en un buscador web. La 2FA con {% data variables.product.prodname_mobile %} no depende de TOTP y, en su lugar, utiliza cifrado de llave pública para asegurar tu cuenta.
+
+Una vez que configuraste la aplicación de TOTP o los SMS, también puedes utilizar {% data variables.product.prodname_mobile %} para autenticarte. Si posteriormente ya no tienes acceso a {% data variables.product.prodname_mobile %}, aún podrás utilizar llaves de seguridad o aplicaciones de TOTP para iniciar sesión.
+
+1. Ya debes haber configurado la 2FA a través de una app móvil de TOTP o a través de SMS.
+2. Instala [{% data variables.product.prodname_mobile %}](https://github.com/mobile).
+3. Inicia sesión en tu cuenta de {% data variables.product.product_name %} desde {% data variables.product.prodname_mobile %}.
+
+Después de iniciar sesión, ahora puedes utilizar tu dispositivo para la 2FA.
+{% endif %}
+
 ## Leer más
 
 - "[Acerca de la autenticación de dos factores](/articles/about-two-factor-authentication)"
